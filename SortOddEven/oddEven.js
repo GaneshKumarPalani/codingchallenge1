@@ -26,8 +26,8 @@ exports.oddEvenSorting = (inputArray) => {
             }
         });
         const oddnumbersArray = customSort(odds);
-        const evenNumbersArray = customSort(evens)
-        return oddnumbersArray.concat(evenNumbersArray)
+        const evenNumbersArray = customSort(evens);
+        return oddnumbersArray.concat(evenNumbersArray);
     }
     return 'The input value is not an array';
 }
