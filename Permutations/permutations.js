@@ -1,4 +1,4 @@
-function permutation(inputArray) {
+const permutation = (inputArray) => {
     let result = [];
     for (let i = 0; i < inputArray.length; i = i + 1) {
       let permutationArray = permutation(inputArray.slice(0, i).concat(inputArray.slice(i + 1)));
@@ -14,8 +14,7 @@ function permutation(inputArray) {
 }
 
 exports.runPremutation = (inputArray) => {
-  var arrayCombination = permutation(inputArray);
-  let newArray = {};
-  var removeDuplicateArray = arrayCombination.filter(( newArray, arrayValue => !(newArray[arrayValue] = arrayValue in newArray) ));
-  return removeDuplicateArray;
+  const arrayCombination = permutation(inputArray);
+  let newValue = {};
+  return arrayCombination.filter(( newValue = {}, arrayValue => !(newValue[arrayValue] = arrayValue in newValue) ));;
 };
