@@ -2,7 +2,8 @@ const customSort = (arrayToSort) => {
     var sortFlag = false;
     while (!sortFlag) {
         sortFlag = true;
-        arrayToSort.forEach(function(i) {
+        let i = 1;
+        arrayToSort.forEach(function() {
             if (arrayToSort[i - 1] > arrayToSort[i]) {
                 sortFlag = false;
                 [arrayToSort[i - 1], arrayToSort[i]] = [arrayToSort[i], arrayToSort[i - 1]];
