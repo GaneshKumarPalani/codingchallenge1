@@ -12,12 +12,18 @@ function permutation(inputArray) {
             result.push([inputArray[i]].concat(permutationArray[j]))
         }
       }
+    
     }
 
     return result;
-  
 }
 
 exports.runPremutation = (inputArray) => {
-    return permutation(inputArray);
+    
+  var arrayCombination = permutation(inputArray);
+  let newArray = {};
+  var removeDuplicateArray = arrayCombination.filter(( newArray, arrayValue => !(newArray[arrayValue] = arrayValue in newArray) ));
+
+  return removeDuplicateArray;
+
 };

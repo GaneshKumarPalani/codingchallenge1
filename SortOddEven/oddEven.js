@@ -36,8 +36,8 @@ exports.oddEvenSorting = (inputArray) => {
     
         }
 
-        oddnumbersArray = customSort(odds);
-        evenNumbersArray = customSort(evens)
+        var oddnumbersArray = customSort(odds);
+        var evenNumbersArray = customSort(evens)
 
         return oddnumbersArray.concat(evenNumbersArray)
     
