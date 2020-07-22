@@ -1,4 +1,4 @@
-function customSort(arrayToSort) {
+const customSort = (arrayToSort) => {
     var sortFlag = false;
     while (!sortFlag) {
         sortFlag = true;
